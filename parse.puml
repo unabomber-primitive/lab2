@@ -1,0 +1,82 @@
+@startuml
+class pokemons.Registeel {
+}
+class moves.Leer {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+class Main {
++ {static} void main(String[])
+}
+class moves.DoubleTeam {
+# String describe()
+# void applySelfEffects(Pokemon)
+}
+class pokemons.Nidoking {
+}
+class moves.Stomp {
+# String describe()
+}
+class moves.SludgeWave {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+class moves.Swagger {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+class pokemons.Pangoro {
+}
+class moves.Thunderbolt {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+class moves.SwordsDance {
+# String describe()
+# void applySelfEffects(Pokemon)
+}
+class moves.DragonClaw {
+# String describe()
+}
+class moves.SludgeBomb {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+class moves.ArmThrust {
+# String describe()
+}
+class moves.HammerArm {
+# String describe()
+# void applySelfEffects(Pokemon)
+}
+class pokemons.Pancham {
+}
+class pokemons.Nidorino {
+}
+class pokemons.NidoranM {
+}
+class moves.ThunderWave {
+# String describe()
+# void applyOppEffects(Pokemon)
+}
+
+
+pokemons.Pokemon <|-- pokemons.Registeel
+moves.StatusMove <|-- moves.Leer
+moves.StatusMove <|-- moves.DoubleTeam
+pokemons.Nidorino <|-- pokemons.Nidoking
+moves.PhysicalMove <|-- moves.Stomp
+moves.SpecialMove <|-- moves.SludgeWave
+moves.StatusMove <|-- moves.Swagger
+pokemons.Pancham <|-- pokemons.Pangoro
+moves.SpecialMove <|-- moves.Thunderbolt
+moves.StatusMove <|-- moves.SwordsDance
+moves.PhysicalMove <|-- moves.DragonClaw
+moves.SpecialMove <|-- moves.SludgeBomb
+moves.PhysicalMove <|-- moves.ArmThrust
+moves.PhysicalMove <|-- moves.HammerArm
+pokemons.Pokemon <|-- pokemons.Pancham
+pokemons.NidoranM <|-- pokemons.Nidorino
+pokemons.Pokemon <|-- pokemons.NidoranM
+moves.StatusMove <|-- moves.ThunderWave
+@enduml
